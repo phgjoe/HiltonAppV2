@@ -1,0 +1,137 @@
+/*BASICS*/
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Regular-webfont.woff') format('woff'),
+         url('OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html, body{height: 100%; min-height: 100%; font-family: 'open_sansregular' !important;}
+body{margin: 0; padding: 0;}
+.centerText{text-align:center; }
+.clear{clear:both; padding: 0; margin: 0; height: 0}
+iframe {border: none; }
+.basicIcon, .basicButton{background-color: transparent !important; border: none !important; color:#FFF !important; text-shadow:none !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow:none !important;}
+#login-page, #home-page{background: url(../img/bg01.jpg) no-repeat center center fixed; background-size: cover;}
+.basicPage{background: url(../img/bg02.jpg) no-repeat center center fixed; background-size: cover;}
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #cbcbcb; margin: 1em 0; padding: 0; }
+a{font-family: 'open_sansregular' !important;}
+/*MENU*/
+/*.ui-panel{width: 21em}*/
+#menuPanel{width: 22em; /*background-color: #013396*/; background-color:rgba(1,51,150,.8); color:#FFF; /*right:1em;*/ visibility: visible; background-image: url(../img/menubg.png); background-repeat: repeat-y; background-position: 5em 0;}
+#panelButton{position: relative; left: .75em;}
+#panelButton img{max-width: 1.5em; margin-bottom: 10px;}
+.paneltext{white-space: nowrap; font-size: 1.5em; margin-left: .5em; /*margin-top: 35px; */-webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -o-transform: rotate(90deg); writing-mode: tb-rl; width: 1em;}
+.panelmenu{padding-left: 5em;}
+.panelmenu button, .panelmenu a{white-space: normal; border-top:1px solid #29aae3 !important; text-align: left; text-transform: uppercase;}
+.panelmenu button:after, .panelmenu a:after{border: 1px solid #FFF}
+.panelmenu button.currentPage, .panelmenu a.currentPage{color: #29aae3 !important;}
+.panelmenu button.currentPage:after, .panelmenu a.currentPage:after{background-color: #29aae3; background-image: none; border: none;}
+
+/*.ui-panel-dismiss-open{border-right:1px solid #29aae3;}*/
+.panelimg img{width: 90%; padding-bottom: 30px;}
+
+.ui-icon-plusUTC:after{background: url(images/icons-UTC/plus-white.png) no-repeat rgba(0, 0, 0, 0) center center !important;}
+
+/*SUBMENU?*/
+.submenu .ui-block-a, .subsubmenu .ui-block-a{padding-right: 3px;}
+.submenu .ui-block-b, .subsubmenu .ui-block-b{padding:0 3px;}
+.submenu .ui-block-c, .subsubmenu .ui-block-c{padding:0 3px;}
+.submenu .ui-block-d, .subsubmenu .ui-block-d{padding-left: 3px;}
+
+.submenu .ui-block-a div, .submenu .ui-block-b div, .submenu .ui-block-c div, .submenu .ui-block-d div{background-color: #e6e6e6; padding: 5px}
+
+
+.submenu .current{background-color: #003395 !important}
+.submenu a{text-transform: uppercase; text-decoration: none; color: #003396 !important; text-shadow:none; padding-top: 8px; display: block;}
+.submenu .current a{color:#FFF !important;}
+
+.subsubmenu .current div{background-color: #003395 !important}
+.subsubmenu .ui-block-a div, .subsubmenu .ui-block-b div, .subsubmenu .ui-block-c div, .subsubmenu .ui-block-d div{height: 10px;}
+
+/*LOGIN PAGE*/
+#loginPopup{background-color: rgba(1,51,150,.8);}
+#logo{ max-width: 250px; margin:10px 0;}
+#login .ui-input-text{border-width: 0px;}
+#pw{background-color: rgba(1,51,150,.8); text-shadow:initial; font-style: italic;}
+#welcome{background-color: transparent; border-color: #FFF; text-transform: uppercase; font-weight: normal;}
+
+/*MAIN CONTENT*/
+.headerImg{width: 100%; display: block; position: relative; -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5); -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.5); box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.5);}
+.contentcon{background-color: #FFF; margin-right: 5em;}
+.content{padding: 15px; position: relative;}
+.content a{color:#003396; text-decoration: none;}
+
+.switchhelper{position:relative; -webkit-box-shadow: 0px -5px 5px 0px rgba(50, 50, 50, 0.5); -moz-box-shadow:    0px -5px 5px 0px rgba(50, 50, 50, 0.5); box-shadow:         0px -5px 5px 0px rgba(50, 50, 50, 0.5);}
+
+/*BUCKETS*/
+.bucket{padding: 5px;}
+.bucket img{width: 100%}
+
+/*SLIDER*/
+.bx-viewport img{width: 100%;}
+#chillerPrev, #chillerNext, #airhandlePrev, #airhandleNext, #packagedproductsPrev, #packagedproductsNext, #vrfproductsPrev, #vrfproductsNext, .servicePrev, .serviceNext, .serviceList{text-align: center; display: block; padding: 0 3em; color: #003396; text-decoration: none;}
+#chillerPrev img, #chillerNext img, #airhandlePrev img, #airhandleNext img, #packagedproductsPrev img, #packagedproductsNext img, #vrfproductsPrev img, #vrfproductsNext img, .servicePrev img, .serviceNext img, .serviceList img{width: 100%}
+
+/*BRANDS*/
+#BIScontent{margin-bottom: 2em;}
+.brand{background-color: #FFF; margin-right: 5em; margin-bottom: 2em;}
+.brandlogo{float: left; max-width: 33%}
+.brandlogo img{width: 100%; display: block;}
+.brandtext{padding: 15px;}
+.brandtext p{font-size: 13px;}
+.brandtext a.basicButton{color:#003396 !important; text-transform: uppercase; text-align: left;}
+.brandtext a.basicButton:after{border: 1px solid #003396;}
+.ui-icon-plusUTCblue:after{background: url(images/icons-UTC/plus-blue.png) no-repeat rgba(0, 0, 0, 0) center center !important;}
+
+/*SERVICE*/
+.servicebtn, .hvacbtn{width: 100%; margin:5px 0; -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5); -moz-box-shadow:    0px 0px 5px 0px rgba(0, 0, 0, 0.5); box-shadow:         0px 0px 5px 0px rgba(0, 0, 0, 0.5);}
+.serviceimg{width: 100%}
+
+/*FOOTER*/
+#footer{text-align: center; background-color: transparent; border: none; font-size: 10px; color:#FFF; font-weight: normal; padding-bottom: 10px; margin-right: 8em; line-height: 20px;}
+#footer a{color:#FFF; background:none; border:none; font-size: 1em; padding: 0; margin: 0; box-shadow: none; font-weight: 400; display: inline-block; line-height: 20px;}
+
+/*CALCULATOR*/
+#calcForm label{font-size: 13px; margin-bottom: 0; width: auto; padding-right: 5px;}
+#calcForm .ui-input-text{margin-top: 0; width: 50%;}
+#calcForm p{margin-bottom: 40px;}
+#calculated{text-align: right;}
+#calculated span{color:#003396;}
+#calcImg{max-width: 100%;}
+
+#calcForm .ui-field-contain{padding: 10px; margin: 0;}
+
+/*MISC*/
+/*video {
+  width: 100%    !important;
+  height: auto   !important;
+}*/
+video, canvas {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  video {
+    height: 100%;
+    position: absolute;
+  }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+-moz-appearance: textfield;
+}
+
+

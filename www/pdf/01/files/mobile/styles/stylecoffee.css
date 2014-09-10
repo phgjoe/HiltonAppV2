@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+/*----------generated styles----------*/
+
+.topToolbar,.contentLabel, .sliderThumb, .helpImg.fontImage{
+	background-color: rgba(71, 24, 0,1);
+}
+
+.popover{
+	background-color: rgba(250, 219, 172, 1); 
+}
+
+
+.toolbar, .contentLabel, .popover .button{
+	color: rgb(250, 219, 172);
+	text-shadow: rgb(0,0,0) 1px 1px 3px; 
+}
+
+.contentInner *{
+	color: rgb(3,3,3); 
+	text-shadow: none;
+}
+
+#bgDiv{
+	background-color: #471800;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+}

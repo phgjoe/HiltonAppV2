@@ -1,0 +1,431 @@
+#body{
+	color: #FFFFFF;
+}
+
+#bgDiv{
+	/*background-color: #000000;
+	background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#D0D9E2), to(#63696E));*/
+	background-repeat: no-repeat;
+
+/*top left, bottom right и т.д.*/
+	background-position: center center;
+	
+/*cover; contain; 100% 100%; auto auto;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;*/
+}
+
+/*---GRADIENT---*/
+.toolbar, .sliderThumb, .contentLabel, .helpImg.fontImage{
+	background-image: linear-gradient(bottom, rgba(0,0,0,0.13) 45%, rgba(255,255,0,0.13) 100%);
+	background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.13) 45%, rgba(255,255,0,0.13) 100%);
+	background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.13) 45%, rgba(255,255,0,0.13) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.13) 45%, rgba(255,255,0,0.13) 100%);
+	background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.13) 45%, rgba(255,255,0,0.13) 100%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.45, rgba(0,0,0,0.13)),
+	color-stop(1, rgba(255,255,255,0.13)));
+}
+
+.toolbar{
+//	background-color: rgba(127,127,127,1); 
+	box-shadow: 2px 1px 6px 0px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 2px 1px 6px 0px rgba(0,0,0,0.5);
+}
+
+.bottomToolbar{
+	background-image: none;
+	background-color: rgba(127,127,127,0.4);
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.buttonsField{
+}
+
+.buttonsField > .button{
+//	background-size: contain;
+	-webkit-background-size: auto 84%; /*android 2.1 displaying background-size only with -webkit prefix*/
+	background-size: auto 84%;
+	background-repeat: no-repeat;
+	background-position: center center;
+//  background-color: rgba(0,0,0,0);	
+	opacity: 1;
+}
+
+.button:hover{
+	cursor: pointer;
+}
+
+.button.active{
+	box-shadow: inset 2px 3px 10px 0px rgba(0,0,0,0.54);
+	-webkit-box-shadow: inset 2px 3px 10px 0px rgba(0,0,0,0.54);
+}
+
+.button.disable{
+	opacity: 0.3;
+}
+
+.sliderBar{ /*new*/
+	background-color: rgba(102,102,102,1);
+	border: 1px solid rgba(32,32,32,1);
+	box-shadow: inset 2px 3px 3px 0px rgba(0,0,0,0.4);
+	-webkit-box-shadow: inset 2px 3px 3px 0px rgba(0,0,0,0.4);
+}
+
+.sliderThumb{	
+	//border: 1px solid rgba(82,82,82,1);
+	border-radius: 6px;
+//	background-color: rgba(123,123,123,1);
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.6);
+}
+
+.sliderLabel{/*new*/
+	background-color: rgba(127,127,127,0.5);
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.6);
+	border-radius: 3px;
+	text-shadow: rgb(0,0,0) 0px 0px 5px;
+}
+
+#popoverBlackout.dark{
+	background-color: rgba(0,0,0,0.6);;
+}
+
+
+.popover{
+//	border: 1px solid rgb(119, 119, 119);
+
+	border-color: rgba(42, 45, 51, 1);
+	border-style: solid;
+	border-width: 1px;
+//	border-radius: 3px;	
+//	border-top: none;
+
+	//-webkit-box-shadow: 2px 2px 5px 0px rgba(85, 85, 85, 0.55);
+	//box-shadow: 2px 2px 5px 0px rgba(85, 85, 85, 0.55);
+
+//	background-color: rgba(217, 217, 217, 1);
+}
+
+.popover.fixedHeightForToolbar{
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: none;
+	border-bottom: 6em solid transparent;
+	//-webkit-box-shadow: 0px 0px 1px 1px rgb(42, 45, 51) inset, 2px -5em 5px 0px rgba(85, 85, 85, 0.55); /*border*/
+	//box-shadow: 0px 0px 0 1px rgb(42, 45, 51) inset, 2px -5em 5px 0px rgba(85, 85, 85, 0.55); /*border*/
+	-webkit-box-shadow: 2px -6em 5px 0px rgba(85, 85, 85, 0.55);
+	box-shadow: 2px -6em 5px 0px rgba(85, 85, 85, 0.55);
+	pointer-events: none;
+	//padding: 0px 1px 1px 1px;
+}
+
+.contentLabel{
+	font-weight:bold;
+	color: rgba(255,248,238,1);
+	border: none;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+
+//	background-color: rgba(127,127,127,1);
+}
+
+.popover.fixedHeightForToolbar > .contentLabel{
+	////border-left: 1px solid transparent; /*for border*/
+	//border-right: 1px solid transparent; /*for border*/
+	//-webkit-background-clip: padding-box; /*for border*/
+	//background-clip: padding-box; /*for border*/
+	//margin-left: -1px; /*for border*/	
+}
+
+.tocOverLabelButton.opened{
+	box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.54);
+	-webkit-box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.54);
+}
+
+.contentOuter/*{
+	background-color: rgba(229, 229, 229, 0.8);
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+*/}
+
+.contentInner{
+	background-color: transparent;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.buttonsField.subMenuUl{
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	background-color:transparent;	
+}
+
+.buttonsField > .subMenuElement{
+	border-radius: 0px;
+	border-bottom: 1px solid rgba(108, 112, 124, 0.44);
+	color: inherit;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.buttonsField > .subMenuElement.active, .buttonsField > .subMenuElement.pressed{
+	background-color: rgba(127, 127, 127, 0.2);
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.closeButton{
+	border: 1px solid rgb(127,127,127);
+	background-color: rgba(127, 127, 127, 0.4);
+}
+
+.closeButton.active{
+	background-color: rgba(127, 127, 127, 0.4);
+}
+
+.startSearchField{
+	border-bottom: 1px solid rgba(108, 112, 124, 0.44);
+}
+
+.startSearchField > .inputSearch{
+	-webkit-appearance: none;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(149, 149, 149);
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.4) inset;
+	box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.4) inset;
+	border-top-color: rgb(135, 135, 135);
+	border-right-color: rgb(202, 205, 209);
+	border-bottom-color: rgb(202, 205, 209);
+	border-left-color: rgb(135, 135, 135);	
+	-webkit-transition: all 0.7s ease 0s;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.startSearchField > .startSearchButton{
+	border: 1px solid rgb(134,125,125);
+	background-color: rgba(103,103,103,0.2);
+}
+
+input[type="search"].inputSearch::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	border: 1px solid rgb(134,125,125);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: url('buttons/exit.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 100%;
+	background-color: rgba(103,103,103,0.2);
+}
+
+input[type="search"].inputSearch::-webkit-input-placeholder{
+	text-shadow: none;
+}
+
+/*---------notifications----------*/
+
+.notify{
+	background-color: rgba(87,87,87,0.6) !important;
+	border-radius: 3px;
+	border: none;
+	-webkit-border-radius: 3px;
+}
+
+.notify > .contentOuter{
+	background-color: transparent !important;
+}
+
+.notify .notificationText{
+	white-space: pre-line;
+}
+
+
+/*----------help styles----------*/
+
+.helpElement{
+	color: #000000;
+	font-weight:bold;
+	word-wrap: break-word;
+}
+
+.helpCaption{
+	font-weight:bold;
+}
+
+.helpExplanation{
+	font-weight: normal;
+}
+
+.helpCategory{
+	//color: rgba(0,0,0,0.5);
+	font-weight:bolder;
+	word-wrap: break-word;
+}
+
+.helpImg.fontImage{
+	//text-shadow: black 1px 1px 2px;
+}
+
+/*----------buttons icons ----------*/
+
+.fontImage:before, .listButton:before, .prevResultButton:before, .nextResultButton:before, .closeResultButton:before, .tocButton:before, .bmButton:before{
+	font-family: 'fontello';
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: block;
+	text-decoration: inherit;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	opacity: 1;
+// 	text-shadow: rgb(0,0,0) 1px 1px 3px;
+	line-height: 1.9em;
+	font-size: 270%;
+}
+
+/*--share--*/
+.shareImage:before{
+	font-size: 270%; line-height: inherit;
+}
+
+.twitterShare:before{
+	content: '\f303';
+}
+
+.facebookShare:before{
+	content: '\f301';
+}
+
+.tumblrShare:before{
+	content: '\f310';
+}
+
+.myspaceShare:before{
+	content: '???';
+}
+
+.linkedinShare:before{
+	content: '\f31b';
+}
+
+.bloggerShare:before{
+	content: '\f315';
+}
+
+.mailShare:before{
+	content: '\2709';
+}
+
+/*----*/
+
+.tocOverTocButton.tocButton:before, .tocOverBmButton.bmButton:before{
+	line-height: inherit;
+	font-size: 150%;
+}
+
+.pagerToolbar .fontImage:before, .searchToolbar .fontImage:before{
+	line-height: 2.3em;
+	vertical-align: middle;
+}
+
+.pagerToolbar .slideShowButton:before{
+	font-size: 350%;
+	line-height: 1.8em;
+}
+
+.listButton:before, .tocButton:before{
+	content: '\2630';
+}
+
+.bmButton:before, .addButton:before{
+	content: '\E75B';
+}
+
+.remButton:before{
+	color: rgba(200,0,0,1);
+}
+
+.searchButton:before{
+	content: '\F50D';
+}
+
+.infoButton:before{
+	content: '\275';
+}
+
+.downloadButton:before{
+	content: '\F4E5';
+}
+
+.shareButton:before{
+	content: '\e715';
+}
+
+.moreButton:before{
+	content: '\e78d';
+}
+
+.slideShowButton:before{
+	content: '\e761';
+}
+
+.slideShowButton.rtl{
+	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+}
+
+.slideShowPauseButton:before{
+	 content: '\2389';
+}
+
+.zoomInButton:before{
+	 content: '\e750';
+}
+
+.zoomOutButton:before{
+	 content: '\e751';
+}
+
+.subMenuElementRightField.arrowL:before, .subMenuElementRightField.arrowR:before, .subMenuElementRightField.image:before{
+	font-family: 'fontello';
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+}
+.prevResultButton:before, .subMenuElementRightField.arrowL:before{
+	content: '\E75D';
+}
+
+.nextResultButton:before, .subMenuElementRightField.arrowR:before{
+	content: '\E75E';
+}
+
+.closeResultButton:before{
+	 content: '\2715';
+}
+
+.toolbar, .contentLabel, .popover .button{
+	/*text-shadow: rgb(0,0,0) 1px 1px 2px !important;*/
+}
+
+.bottomToolbar, #zoomToolbar, #searchToolbar, .startSearchButtonText, .closeButton{
+	color: rgb(255,255,255) !important;
+}
+
+.closeButton, .startSearchButtonText{
+	text-shadow: rgb(0,0,0) 1px 1px 2px !important;
+}
+
+

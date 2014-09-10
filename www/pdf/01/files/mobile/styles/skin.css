@@ -1,0 +1,31 @@
+﻿
+@CHARSET "UTF-8";
+/*----------generated styles----------*/
+
+.topToolbar,.contentLabel, .sliderThumb, .helpImg.fontImage{
+background-color: rgba(200,200,200,1);
+}
+
+.popover{
+background-color: rgba(230,230,230,1);
+}
+
+
+.toolbar, .contentLabel, .popover .button{
+color: rgb(56,56,56);
+text-shadow: none;
+}
+.contentInner *{
+
+color: rgb(0,0,0);
+text-shadow: none;
+}
+
+#bgDiv{
+	background-color: rgba(200,200,200,1);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+}
+/*----------end of generated styles----------*/
